@@ -51,27 +51,6 @@ li a {
 
 }
 
-.talkBtn {
-    color: black;
-    background-color: rgb(217, 181, 251);
-    border: 2px solid black;
-    box-shadow: 4px 4px 0px black;
-    padding: 5px 20px;
-    display: inline-block;
-    transition: transform 0.2s ease;
-
-}
-
-nav .talkBtn:hover {
-    transform: translateY(-4px);
-    color: black;
-    background-color: rgb(226, 198, 255);
-    text-decoration: none;
-    box-shadow: 5px 5px 0 black;
-
-
-}
-
 #home h1 {
     margin-top: 0;
 }
@@ -83,7 +62,8 @@ nav .talkBtn:hover {
 
     min-height: 70vh;
     gap: 60px;
-    padding: 70px 8%;
+    padding: 35px 8% 70px;
+
 }
 
 #about,
@@ -145,11 +125,19 @@ section h1 {
     border: 3px solid black;
     box-shadow: 5px 5px 0 black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     position: absolute;
     font-weight: bold;
     transition: transform 0.2s ease;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .card:hover {
@@ -159,7 +147,7 @@ section h1 {
 
 .code {
     top: 0;
-    left: 20px;
+    left: 40px;
     background-color: rgb(218, 186, 249);
     transform: rotate(12deg);
 }
@@ -173,7 +161,7 @@ section h1 {
 
 .build {
     bottom: 10px;
-    left: 10px;
+    left: 30px;
     background-color: rgb(227, 122, 139);
     transform: rotate(-12deg);
 }
@@ -286,6 +274,7 @@ section h1 {
     border: 2px solid black;
     box-shadow: 4px 4px 0 black;
     font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .html {
@@ -458,6 +447,8 @@ section h1 {
     gap: 45px;
     padding: 100px 9%;
     position: relative;
+    flex-wrap: wrap;
+
 }
 
 .contact-info {
@@ -566,7 +557,7 @@ footer p {
 
 .style3 {
     position: absolute;
-    right: 180px;
+    right: 165px;
     top: 0px;
     width: 22px;
     transform: rotate(35deg);
@@ -574,15 +565,10 @@ footer p {
 
 .style4 {
     position: absolute;
-    right: 330px;
+    right: 310px;
     bottom: -25px;
     width: 22px;
     transform: rotate(-170deg);
-}
-
-.skill {
-    transition: transform 0.2s ease,
-        box-shadow 0.2s ease;
 }
 
 .skill:hover {
@@ -590,7 +576,7 @@ footer p {
     box-shadow: 7px 7px 0 black;
 }
 
-nav li a:not(.talkBtn) {
+nav li a {
     background-image: linear-gradient(#a176f5, #a176f5);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -598,7 +584,7 @@ nav li a:not(.talkBtn) {
     transition: background-size 0.4s ease;
 }
 
-nav li a:not(.talkBtn):hover {
+nav li a:hover {
     background-size: 100% 2px;
     color: rgb(134, 8, 253);
 }
@@ -622,11 +608,6 @@ nav li a:not(.talkBtn):hover {
 
     header ul li {
         padding-right: 0;
-    }
-
-    header ul li:last-child {
-        flex-basis: 100%;
-        text-align: center;
     }
 
     .about-text h2 {
@@ -690,6 +671,15 @@ nav li a:not(.talkBtn):hover {
         max-width: 100%;
     }
 
+    .code {
+        left: 0px;
+    }
+
+    .build {
+        left: 0px;
+    }
+
+
     .purpose {
         position: static;
         width: 200px;
@@ -751,6 +741,8 @@ nav li a:not(.talkBtn):hover {
         width: 100%;
         max-width: 350px;
         box-sizing: border-box;
+        margin: 0 auto;
+
     }
 
     .project p {
@@ -856,11 +848,11 @@ nav li a:not(.talkBtn):hover {
     }
 
     .style3 {
-        left: 55%;
+        left: 60%;
     }
 
     .style4 {
-        left: 0%;
+        left: -5%;
     }
 
     .purpose {
@@ -892,5 +884,9 @@ nav li a:not(.talkBtn):hover {
     .decoration {
         width: 180px;
         margin-left: 15px;
+    }
+
+    .build {
+        left: 0px;
     }
 }
