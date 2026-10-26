@@ -1,0 +1,896 @@
+body {
+    background-color: #FDF6E6;
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+#home,
+#about,
+#skills,
+#projects,
+#contact {
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 50px;
+}
+
+header ul li {
+    display: inline-block;
+    padding-right: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    color: black;
+
+}
+
+.talkBtn {
+    color: black;
+    background-color: rgb(217, 181, 251);
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px black;
+    padding: 5px 20px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+
+}
+
+nav .talkBtn:hover {
+    transform: translateY(-4px);
+    color: black;
+    background-color: rgb(226, 198, 255);
+    text-decoration: none;
+    box-shadow: 5px 5px 0 black;
+
+
+}
+
+#home h1 {
+    margin-top: 0;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 70vh;
+    gap: 60px;
+    padding: 70px 8%;
+}
+
+#about,
+#skills,
+#projects,
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hello {
+    font-size: 28px;
+    width: 120px;
+    height: 20px;
+    font-family: 'Patrick Hand', cursive;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0px;
+    transform: translateX(-18px) rotate(-8deg);
+}
+
+#home .text>h2 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.hello-container {
+    position: relative;
+    width: fit-content;
+}
+
+section h1 {
+    font-size: 68px;
+    font-family: 'Archivo Black';
+    margin-bottom: 10px;
+    line-height: 1.05;
+    transform: rotate(-1deg);
+}
+
+.text p {
+    max-width: 500px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.cards {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    margin-left: 0;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0 black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: rotate(0deg) scale(1.05);
+    z-index: 2;
+}
+
+.code {
+    top: 0;
+    left: 20px;
+    background-color: rgb(218, 186, 249);
+    transform: rotate(12deg);
+}
+
+.ideas {
+    top: 40px;
+    right: 0;
+    background-color: #ffe66d;
+    transform: rotate(-10deg);
+}
+
+.build {
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(227, 122, 139);
+    transform: rotate(-12deg);
+}
+
+.learn {
+    bottom: 0;
+    right: 20px;
+    background-color: rgb(167, 241, 210);
+
+    transform: rotate(10deg);
+}
+
+.button-container {
+    position: relative;
+    width: fit-content;
+    margin-top: 25px;
+}
+
+.projectBtn {
+    color: black;
+    background-color: rgb(247, 173, 229);
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px black;
+    padding: 12px 24px;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+#home a:hover {
+    transform: translateY(-4px);
+    background-color: rgb(252, 184, 235);
+    box-shadow: 6px 6px 0 black;
+}
+
+.arrow {
+    position: absolute;
+    width: 55px;
+    right: 102%;
+    top: -38px;
+}
+
+.aboutme {
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0 black;
+    background-color: #DDDEFB;
+    transform: rotate(-8deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/about.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center 17px;
+    padding-top: 25px;
+    font-weight: 900;
+    flex-shrink: 0;
+
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 80px 120px 50px;
+}
+
+.about-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 12px;
+
+}
+
+.about-text h2,
+.about-text p {
+    padding-left: 30px;
+}
+
+.about-text h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.purpose {
+    position: absolute;
+    width: 240px;
+    right: -330px;
+    top: 20px;
+}
+
+.skills-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+
+.skill {
+    padding: 15px 35px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    font-weight: bold;
+}
+
+.html {
+    background-color: #FFADAD;
+}
+
+.css {
+    background-color: #CDB4FF;
+}
+
+.java {
+    background-color: #A8E6CF;
+}
+
+.javascript {
+    background-color: #FFD1A9;
+}
+
+.git {
+    background-color: #ffe66d;
+}
+
+.mysql {
+    background-color: #A7D9FD;
+}
+
+#skills {
+    padding-left: 9%;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    position: relative;
+
+}
+
+.tools-container {
+    position: relative;
+    width: 160px;
+    height: 100px;
+    flex-shrink: 0;
+    top: 10px;
+}
+
+.tools {
+    position: absolute;
+    right: 30px;
+    top: -40px;
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    transform: rotate(-12deg);
+    line-height: 1.1;
+}
+
+.upArrow {
+    position: absolute;
+    width: 60px;
+    left: 0;
+    top: 0;
+    transform: rotate(-35deg);
+}
+
+.skills-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#projects {
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin: 0;
+}
+
+.project {
+    width: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+.project p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.project-tech {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 0 black;
+}
+
+.homeland {
+    background-color: #F3EDFF;
+}
+
+.portfolio {
+    background-color: #FFF0F3;
+}
+
+.warak {
+    background-color: #E8F8F1;
+}
+
+.project img {
+    width: 100%;
+    height: 210px;
+    border: 2px solid black;
+    display: block;
+    box-sizing: border-box;
+}
+
+.contact-card {
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0 black;
+    background-color: #fdbebe;
+    transform: rotate(-8deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/mail.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center 17px;
+    padding-top: 25px;
+    font-weight: 900;
+    flex-shrink: 0;
+
+}
+
+.decoration {
+    position: relative;
+    width: 180px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+#contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 45px;
+    padding: 100px 9%;
+    position: relative;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.email-text {
+    max-width: 370px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+.contact-links a {
+    width: 200px;
+    height: 40px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0 black;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.contact-links a:hover {
+    background-color: #f8d7d7;
+    transform: translateY(-4px);
+
+}
+
+
+.contact-note {
+    position: absolute;
+    right: 45px;
+    bottom: 30px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-12deg);
+}
+
+.downArrow {
+    position: absolute;
+    width: 60px;
+    left: -35px;
+    top: 15px;
+    transform: rotate(-15deg);
+}
+
+.style2 {
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    width: 25px;
+    transform: rotate(35deg);
+}
+
+p {
+    color: rgb(88, 88, 88);
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 15px;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+.style {
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    width: 22px;
+    transform: rotate(35deg);
+}
+
+.style3 {
+    position: absolute;
+    right: 180px;
+    top: 0px;
+    width: 22px;
+    transform: rotate(35deg);
+}
+
+.style4 {
+    position: absolute;
+    right: 330px;
+    bottom: -25px;
+    width: 22px;
+    transform: rotate(-170deg);
+}
+
+.skill {
+    transition: transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px) rotate(-2deg);
+    box-shadow: 7px 7px 0 black;
+}
+
+nav li a:not(.talkBtn) {
+    background-image: linear-gradient(#a176f5, #a176f5);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 4px;
+    transition: background-size 0.4s ease;
+}
+
+nav li a:not(.talkBtn):hover {
+    background-size: 100% 2px;
+    color: rgb(134, 8, 253);
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    header ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header ul li {
+        padding-right: 0;
+    }
+
+    header ul li:last-child {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        margin-bottom: 5px;
+    }
+
+    #home {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+        text-align: center;
+        min-height: auto;
+        box-sizing: border-box;
+
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    .text p {
+        max-width: 100%;
+    }
+
+    #home .text {
+        width: 100%;
+
+
+    }
+
+    .cards {
+        flex-shrink: 0;
+        margin-left: 0;
+        width: 260px;
+    }
+
+    .style {
+        left: 70%;
+        top: 15px;
+    }
+
+    .style3,
+    .style4 {
+        display: none;
+    }
+
+    .button-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .purpose {
+        position: static;
+        width: 200px;
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    #skills {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .skills-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tools-container {
+        width: 160px;
+        height: 80px;
+        top: 0;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .tools {
+        top: -5px;
+        right: 0;
+    }
+
+    .upArrow {
+        top: 25px;
+        left: 0;
+    }
+
+    .skill {
+        padding: 12px 20px;
+    }
+
+    #projects {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    .project p {
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .project h3 {
+        text-align: left;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px 15px;
+        margin-top: -15px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .contact-card {
+        flex-shrink: 0;
+    }
+
+    .contact-links {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .decoration {
+        width: 180px;
+        height: 130px;
+        margin: 0 auto;
+    }
+
+    .downArrow {
+        display: none;
+    }
+
+    .contact-note {
+        right: 0;
+        left: 0;
+        bottom: 30px;
+        transform: rotate(-6deg);
+    }
+
+    footer {
+        padding: 15px 10px;
+        text-align: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer p {
+        font-size: 12px;
+        color: white;
+
+        margin: 0;
+    }
+
+    body {
+        min-height: 100vh;
+        height: auto;
+        overflow-y: auto;
+        margin: 0;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    #home {
+        flex-direction: column;
+        padding: 50px 30px;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .text p {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cards {
+        width: 280px;
+        margin-left: 0;
+    }
+
+    .style {
+        left: 60%;
+    }
+
+    .style3 {
+        left: 55%;
+    }
+
+    .style4 {
+        left: 0%;
+    }
+
+    .purpose {
+        position: static;
+        align-self: center;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #contact {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        padding-bottom: 50px;
+    }
+
+    .contact-info {
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .email-text {
+        width: 370px;
+    }
+
+    .decoration {
+        width: 180px;
+        margin-left: 15px;
+    }
+}
